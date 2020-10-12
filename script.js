@@ -31,6 +31,9 @@ function vysledek() {
     vysl = c1 * c2;
   }
   else if (op == "deleni") {
+    if (c2 == 0){
+      alert("I ty srando.");
+    }
     vysl = c1 / c2;
   }
   document.getElementById("vysl").value = vysl;

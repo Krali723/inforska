@@ -18,9 +18,20 @@
    <h1>Kalkulačka</h1>
 
    <input type="number" id="cislo1">
-   +
+
+  <select id="operace">
+    <option value="plus">+</option>
+    <option value="minus">-</option>
+    <option value="nasobeni">*</option>
+    <option value="deleni">/</option>
+  </select>
+  
    <input type="number" id="cislo2">
-   <input type="button" value="=" onclick="vypocet()">
+   <input type="button" value="=" onclick="vysledek()">
+
+   <input type="text" id="vysl" readonly="readonly">
+
+   <div id="vysledek2">???</div>
 
 
 
